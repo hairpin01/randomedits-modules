@@ -24,7 +24,6 @@ class RandomEdits(
     _MixinUtils,
     ModuleBase
     ):
-    """Отправляет случайный эдит."""
 
     name = "RandomEdits"
     version = "1.0.5"
