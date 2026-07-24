@@ -1,0 +1,53 @@
+
+
+STRINGS = {
+    "ru": {
+        "name": "RandomEdits",
+        "pick": '<tg-emoji emoji-id="5427312230767037491">🤔</tg-emoji> <b>Ищу погодь...</b>',
+        "no_posts": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>Не удалось найти подходящие эдит.</b>',
+        "done": '<tg-emoji emoji-id="5206607081334906820">✔️</tg-emoji> <b>Случайный эдит отправлен ниже.</b>',
+        "settings": (
+            '<tg-emoji emoji-id="5341715473882955310">⚙️</tg-emoji> <b>Настройки модуля:</b>\n'
+            "<b>Канал:</b> <code>{channel}</code>\n"
+            "<b>Глубина выборки:</b> <code>{limit}</code>"
+        ),
+        "bad_channel": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>Канал недоступен или указан неверно.</b>',
+        "protected": (
+            '<tg-emoji emoji-id="5274099962655816924">❗️</tg-emoji> <b>Telegram запретил повторную отправку этого эдита.</b>\n'
+            "<i>Попробуй ещё раз — будет выбран другой эдит.</i>"
+        ),
+        "flood": (
+            '<tg-emoji emoji-id="5395695537687123235">🚨</tg-emoji> <b>Слишком много запросов.</b>\n'
+            "<i>Попробуй снова через {seconds} сек.</i>"
+        ),
+        "rpc_error": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>Ошибка Telegram:</b> <code>{error}</code>',
+        "unknown_error": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>Неожиданная ошибка:</b> <code>{error}</code>',
+    },
+    "en": {
+        "name": "RandomEdits",
+        "pick": '<tg-emoji emoji-id="5427312230767037491">🤔</tg-emoji> <b>searching...</b>',
+        "no_posts": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>No suitable edit were found, sorry.</b>',
+        "done": '<tg-emoji emoji-id="5206607081334906820">✔️</tg-emoji> <b>this edit ;).</b>',
+        "settings": (
+            '<tg-emoji emoji-id="5341715473882955310">⚙️</tg-emoji> <b>Module settings:</b>\n'
+            "<b>Channel:</b> <code>{channel}</code>\n"
+            "<b>Sample depth:</b> <code>{limit}</code>"
+        ),
+        "bad_channel": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>Channel is unavailable or invalid.</b>',
+        "protected": (
+            '<tg-emoji emoji-id="5274099962655816924">❗️</tg-emoji> <b>Telegram blocked forwarding this edit :( </b>\n'
+            "<i>Try again — another edit will be selected.</i>"
+        ),
+        "flood": (
+            '<tg-emoji emoji-id="5395695537687123235">🚨</tg-emoji> <b>Too many requests.</b>\n'
+            "<i>Try again in {seconds} sec.</i>"
+        ),
+        "rpc_error": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>Telegram error:</b> <code>{error}</code>',
+        "unknown_error": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>Unexpected error:</b> <code>{error}</code>',
+    },
+}
+
+
+__all__ = [
+    'STRINGS'
+]
