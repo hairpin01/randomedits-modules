@@ -2,9 +2,8 @@
 from __future__ import annotations
 
 import html
-
-from typing import Any
-
+from pathlib import Path
+import yaml
 from telethon import events
 from telethon.errors import (
     ChannelInvalidError,
@@ -12,13 +11,22 @@ from telethon.errors import (
     FloodWaitError,
     RPCError,
 )
+import asyncio
 
 from core.lib.loader.module_base import ModuleBase, command
 from core.lib.loader.module_config import ConfigValue, EntityLike, Integer, ModuleConfig, Row
 
 # Local imports
-from randomedits_lib import STRINGS
 from randomedits_lib import _MixinUtils
+
+def _load_strings() -> dict[str, dict[str, str]]:
+    for root in (Path(__file__).resolve().parent, *(Path(path) for path in globals().get("__path__", ()))):
+        path = root / "assets" / "strings_random_media.yaml"
+        if path.is_file():
+            with path.open("r", encoding="utf-8") as file:
+                return yaml.safe_load(file)
+
+    raise FileNotFoundError("assets/strings_random_media.yaml")
 
 class RandomEdits(
     _MixinUtils,
@@ -33,7 +41,7 @@ class RandomEdits(
         "en": "Sends a random edit",
     }
 
-    strings = STRINGS
+    strings: dict[str, dict[str, str]] = _load_strings()
 
     config = ModuleConfig(
         ConfigValue(
@@ -74,6 +82,8 @@ class RandomEdits(
                 return
 
             await self._edit_status(status, self.strings("done"))
+            await asyncio.sleep(3)
+            await status.delete()
         except (ChannelPrivateError, ChannelInvalidError, ValueError) as exc:
             self.log.warning("RandomEdits source channel is unavailable: %s", exc)
             await self._edit_status(status, self.strings("bad_channel"))
