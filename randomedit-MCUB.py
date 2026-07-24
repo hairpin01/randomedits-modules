@@ -1,13 +1,13 @@
 # name: RandomEdits
-# version: 1.0.4
+# version: 1.0.5
 # CubKit build info:
-# CubKit source sha256: 3ea6e616bddd9c45a95d9d3fa8695ea59639a7436b21812f8d7702f1366e8db5
-# CubKit payload sha256: a4708ec1712a65c9feafd9fae5cc6c913675e8be01b412d38643ae50c4cf61c0
+# CubKit source sha256: 3a96b0ae93999767d768a55d600b399f341669e04b57cf332c3886d6411e8c41
+# CubKit payload sha256: d5b8d1c5ec30a8e90e3c594e0182608f9f28716e44f2d99f33a1e9a3d865643c
 # CubKit source map:
-# - generated line 119 -> RandomEdits.py:1
+# - generated line 116 -> RandomEdits.py:1
 # - bundled files are extracted from the CubKit payload at import time:
-#   - randomedits_lib/__init__.py -> __init__.py:1 (lines: 9, sha256: 805780d0ce735f8c06faa2affa008d8325bcf078d46c65aead82cc209bccfd3c)
-#   - randomedits_lib/strings.py -> strings.py:1 (lines: 53, sha256: 31cadf8543bbee4f407e68e19f3d951eb753a69a2e78f0b55e83a9a2dc89595d)
+#   - assets/strings_random_media.yaml -> strings_random_media.yaml:1 (lines: 39, sha256: f15e328c750c13fe67841c2e20a0fdf3d41c9505dd21b2ef72e596065f47b912)
+#   - randomedits_lib/__init__.py -> __init__.py:1 (lines: 7, sha256: 84caae2083115d4732ebfb055b7f2d73c56da5bdac12f0677d28c86c887a3e9c)
 #   - randomedits_lib/utils_mixin.py -> utils_mixin.py:1 (lines: 68, sha256: 1e566b1331999637b558d0f8957571e104393ffbdbf4ee9247e05603d41f9cad)
 
 from __future__ import annotations
@@ -20,46 +20,43 @@ from __future__ import annotations
 # - CubKit import-debug comments below explain sys.path/package wiring for private relative imports.
 __cubkit_module_id__ = 'randomedits'
 __cubkit_package_dirs__ = ('randomedits_lib',)
-__cubkit_bundle_sha256__ = 'a4708ec1712a65c9feafd9fae5cc6c913675e8be01b412d38643ae50c4cf61c0'
+__cubkit_bundle_sha256__ = 'd5b8d1c5ec30a8e90e3c594e0182608f9f28716e44f2d99f33a1e9a3d865643c'
 __cubkit_bundle_b85__ = """
-P)h>@6aWAK2mk;8App>*!{2=X005u>000{R0044fZe(w5Wn^h|b6;#}VlQ7`X>MtBUtcb8c~eqS3Mk4fODsuMC`e4sPE1c#NXsu$
-D9OkyR`7KWbyCR9Pbtkw)l*VZ;^Imx%Fk8MD=sO@%u6p;$jmLsFDg+84hiz~a}S0}mX>7Z6vyXgR%GVE6vX?2c%dK(F0T0a#GIV?
-cm-R9Xf6dHP={()*MV@66a$4~xd2d00|XQR000O8001EX^nhwz)&l?lJ`4Z=8UO$Qa$#;{Z*65{X>@a6Y-
-wUIb98cPZfA2YaCya7-EJF26u$RUjP}N@)F%7m-
-Sr07HwYmv=tUE*D6+=hX}n}TV`kS4Q4}e}LJ*M>AtC`0p+e$<%f#5Nlhn>D%)CNh03Lxe<G-
-YiA*j@~65G3TcFuRc?>lGYOlEoI!3X!>Uq<)PW(L8_;0<GG_+4L9TqAJDcz|ihYVU<nnizK`%k`+T2Fuw(x_Xz?*ryTF?{}l{p5f
-+f-?41lF@4WB9X}UXM)9wwza117N6|%8C>O<#a#uEyxDb8u2mH6?-
-onB{VX<7yUdlvSsm>C}J}aATnSpD&j^+8DYvx?bH;ONh_FhePBsxeoMOz$;bJ3Sy$UP)_aB(VkM0Wt9Ex*+7`*K%wRrnJK@5-
-GiOd+FWHXhUSOyA5~j*|;aFK?TG=jVezyZf&~`c<6Eru<5Q5Iy;gI2~t1fN)1#$Zc3_0p5=2DYRYjOmwEuBqU8Ex~dquHNLA}*W+
-_?mT$Q^-
-^u6gzy;nEzQdoc!FME%fu|in(FcTQil!Hupe6v{Us5<8((IL#hI;N0P%CQBbqFd{SV)SSl`5u`#9M_$ef^Lc(@%b{7!fB>C_Ilu3
-rINuDz;VfE1ShpElNjQO*XoHiIy@BOT(P6>z#2yN`wwb)YrT;!8KZ$E=bf>?mB~@=PGy**b*JU-
-V^;P&FY+`q>_^GhN9Vi&J2RUvpv_%TV7!26wn{0MOz^;S>?EfG!EsUjxxA{t}Nby3&m#-
-jQ8zTmz_Z`$|q`Fb>rBI;&|bDp`)UB3b7a39w$)zDS}+P@;jtAe2!jjA0WNZRv3nA>NTLJEw^Dswf*VkK8t3E`6y=Wrd&CJ>nUUV
-Uf#EC$97ybehz=Xru`u6*C1M7yinHe4ND(W2Qn+pZcYHit4&&9Ug&Ejeg}xyOh|>%FxgV;9dY&#b@F<pL^x;sbuIe~6xN020Y{>d
-C$4mm&NAwt%hqhrHOkiM{{sW2F7WXTptN-lK^Mt=<-
-0Mue+9KQ_%H~a`w5j0%qvxxt#9sJy3bJ3h*DgR2_jGfS|^;KN321^J1AkCZ@i(?C#^=wAmcl?=XRug$ifB`I@*5b5%TU}ZvWTwV;
-R@#uzg7CY4z<L7env}_-
-#=97)P;ImvI!)$2g9{w{RMiV^&!sAsCCVV;%zeXkvh+TWHpVTj3iBui}X6X^tsNtAr1Y8pSaxD=}k@eZJFsg)vmabOUknS%W|y&K
-%N{65ww#is8!~=I~emz1jQ+@JEz<Uf1&65CKfvtxP6UD&aUTmEiZm$NF}5_=6#v`6Tl<P)h>@6aWAK2mk;8ApmTf0}SQ@004Oi00
-15U0044fZe(w5Wn^h|b6;#}VlQ=cX>4;}ZE1LEZZ2?nwN_1!+At8k=T}&{Y$Bzgy+)#HFTJ&=_Jok-
-4HK}|u_Jrfg{nWk<ByPpfYd!S7sAYVKHhs{XsziO=j{nk7C2|J>y1Swv^FSE8tt;I^)Yzqr9KS)ulf?rR_Hx_By)2#vVkmXlyHvm
-@A545FO<sFS;pwuL(8}}wi8PJ2HqU04yeL`YAg08)Cp>zx@4a|Gl#Yghy0Tw*~XiT5Xp>Xd0wu_Ap4@chPGtyEwu8?q-
-I5aMC@I?UgN5RbzZSxn0}8h<yg!=vK?wt0b$X-
-OFR}a?@j2uzw4=9NlXVS)`@d4Y@W;Q^KNnc#e#UfS}hP6dQ#sHn6JOEyo@jkchOA*voT6RgS<BmT>vtGr=-IzA-
-TH?Aw{ho(6DNZZslQ{Cu6=Fkp+zsFO)#M3yCq!D_GxSqa=A(2S6U9igbQF-GOuB0InXJqg2~nc8!Q*dHy<g@Z{a8AQ3DdQWY~GW8
-rFMQ?et_XM;J>^$K|K<hwC^DFB*AAjyroA(@EAuLB9@htY6P0*31A6U-
-b4XQU~Md8*X^kn53>Qya92%LIEVrpJAqf9+{NZzcL3^xmf|vs>{EK?}h-
-I>O`D2hpYFCAyKzeOTX$lJx4r(bU8uvOl3uf+4m`^28HSuzfK`ReqsU#6+w?&U2;RNPUDUK@`k$2+}OygmO^DEFNQha7C_7Oq5S%
-_lB^-{uV2Odo0t4-V1>I0~bEvKAZk!B77q2-
-mwXX*>sxVnNRX?;{qM6R8ZWzlRPEW!r{X=p~%vgrre~@Wxzn~W_VeK^ujveo!P^NF56D!^N`7fLcDxr&V=*_Mjc2C8}@&Ox!s(f_
-5_jD#qJQ~$m!<<PcE$uywPxJY5We?ejUP!kg1-E;wW5DPdGvH@wxJneyH~}q*CIABoKTn?<wytLPU3rDtyUmIbwM`(}WhG-
-8)>{c$gsLoVubv6m-
-RhY)_Ma15ep5`wLJ@0Rj{Q6aWAK2mk;8App>*!{2=X005u>000{R0000000000005)`00000a$#;{Z*65{X>@a6Y-
-wUIUtei%X>?y-
-E^v8JO928D0~7!N00;m803iVMfNEXV0{{R%3;+Nc00000000000001_0k!}D0CHh&WN&R{WNCDBUu<b&FLQKqX>Mn8E^v8JO928D
-0~7!N00;m803iTun*$8y0ssJc2mk;c00000000000001_0mK9V0CHh&WN&R{WNCDBUu<b&FLiWjY;#|2X?SUFE^v8JO9ci100003
-00RKs0002y2LJ#700
+P)h>@6aWAK2mk;8Appk0ZB|eO0090A001BW003cgb7gdMFLQKqX>Mn8Uvgn?WN&R>ZDnL>VJ>-
+LZEU?&&2HO95WeRr2EN1rVwpc8DY>dH?V&ximpW&IBG(ctYF8yGt412Ywh$yioEk+8q&4aW0ea}EP*f?FY)gHG<tyX`+DGW@lA`3
+qb_zrZWYA0Q?94acd@~!g)@}gQ$@WHQH<~`#@V$l?t-($Hf}ipUKa2Opf8c-
+fNxaL?_<;BMm=ELofUgt$y^J5>NBqP`fTmqscG0ejN8%lM=$v=sJzNiYPp<Zpts(GU{FuK)n;ky5nZj^tHl@TD2>#?Je1Lmn^grU
+~x8cjr0iB%T$#@rkk8yb_0*%EZ3%!EqcH=#C`#{1vh4=}A9*R%A2g{gKCw>q=<O6YX0214T|CM07C4e+Nr;Z3pQFVnh*tZ_Y=Zfc
+kx@6=vOII~bS1i*~bSqy}m&*S>|NXGEI<+oCsZ!=Y$B*KU<PBX<ct76H<#MIfN?8P;Y@^A-D7-
+3&rYc24Gj!FoOhd^Vs<l*peZ2o>jAH@6gUJcTk!nG$;9!Kg4wKmZ_`ZA|V3~%(Jmn&T;xbCEgrS(GVkrex*YiciENBYC`1SCg;lZ
+0oUL>rF*nEtY8D)V0f$hnHcd`CLKx2?~dBq1Ah>%2)N2|!k4=eZza48%;uUe{+xAa0mD;mg-fOGWAC2)?hn7e6VM<@*><6P3vL7W
+F`B5V={ZI7nHk)NUDFqf3?raHV=T9xma^;3~3iguW&Zl+)ia>0RYq`Bi2+np2l`&2yxEcJ^lPh_qgthXdLZIO;_i4$R*81~X`nq;
+&$0~Qe{BJTCPYgS$<7K^548b(1ii&|dbdiFN&>%=G3z;1vHD{4LvN)$+i7JITQ5duo($BVi+#a@Y@$QH$JnRRS8H>;Ib=Ff3ojuj
+j`9WihQ*kwO~baDc(cMd^r^hMmXIC2je=*K&_BU*7Z-
+vpj;zUede4i5C9VG7MzX2DW5UDFNG_D6qQ(g^7Jp&Xv)LUrRbrHqn^9Gt!D6GIzu5C<k;SBbg}Fu}VaaTs;Odt!gUPp9~Urn5nUf
+CcZVtltp$5cMpk>a>;@L@k3%MJ*K6qIJsJbRp4knqkVX5J6um95o&v2$^J{uETPJ&?~O8FIXEIHr<ARID|%!b|ExK7}`}5Ld0OpB
+W-Bc2*pw4V@u#LdizGY6Ow@14I*zM7J%>3x;Pxw2!yN^I3)AUHsx31dQk|=6&!CQz^NZebJlWdi@Ik*Vh2tQ;V%4k`I<r4@*=z9C
+wV}d1Ozr&i@LWl-5}Ur>>U!-
+yf6v$$*m7{F?_|`7N(PVoxcb^OY8hUZh>#4z`!NVsP=J&ehLndq87EcY|oc<K@oa%%l19@!_V}J&zw4OQ2{~Q4qW69W+hu&hWUB6
+9&CeMwLL0lvW>#8q5cyUdA<)7lJ*&K7e9m78JqU|cP)Z_kh>fj{>=s|E*3mZGvX3oA8U-
+>q2&9fWcJ;G{{v7<0|XQR000O8001EXe!vl5W&i*HbN~PV8vp<Ra$#;{Z*65{X>@a6Y-wUIUtei%X>?y-E^v8G$uSOtFbqcF-KY5
+Fg#~egF71rO!c<jOR6=W!G*MzIjt^|S?dfCYq3GY4M|SVUeLUt=U|+51ALAV{O>6KSGZW1vMRcoas1kM4A2jAv4AP%Bo<JnxLJ+|
+XPr^}i(Wa#r?NCbt1QY-
+O00;m803iTun*$8y0ssJc2mk;c0001TVQyq^ZDnL>baP*9X<{#RbZKmJUu|i4X>KlXd9_wekJ>O0z2{e0xoje(puI+-
+YA?ODr}l)9<qZ?C*0Cdd*oCS;zT=OOgn-mNG#A3mcs|~HV`#1E80YN?PZl_5vg?gSCbTvvP#W#Bto1Q?>7_ml{;&EH%~t3=eI#>p
+G_rv#Ym{(~@$d31^)Hml)mg^q*+a{?HntN={s!J0sSc>Zfod!ECe#UPpSon9J~M~54u|}cBH6~9ixA0-
+WqDq%$RPWoyoR=9?=7_Q%%o;TenjkDy<X$0gLPi9V3>Z7FXdRwKe8QaQUPJny-Pe6G4D<2yua(IUP(*`D%Oc}Fl?U7?elJN{KbNJ
+y;?008G2IR516mNu)K^g3U|>>1hX+pL4&+E4qX5;fTyIxEg`wP3n4|V9?-CAjBe#&n<rzw8<7Q#5-
+*fMybFmj%_~^nW1}Q_R|h~Iql$EXJl%nF;sCB5o1;|QU3QI#V|o5McktxhsUQ(7A5s-
+FAY<WbW>c~w&}V}=(e(;=@Z`HOd?^5$Mj*+Jx*?f}#;*ej=7-
+U6PXdPO>l4fz2xp`zi+QTl|B&mEl2aSBiOU3gDW=DLoqz3VKyM}b9`xR)EVEnj4M7XRIXc4Q)(6q0<t4h2%Y9hiijwr|!qL>kBC<
+cBPl6$~OY+1MQLue6Mpb^HQ^Z89LC$lf-AH|eDM1v>a|qHb--L2d#Vj6UeQ-stO-
+z(eX7`4$!u}R3f_p5}h~5i;`~w$0;69uFWg>hc>)x>mhuL(R;F(YIaN`0UtyEClyOTU6)xzP!H=)SVm!{mL&t<?s?PhpchV;TZ;G
+NmShA!Jq<@1oqg+jc1WX^>22Sy!83mf)-hPmCGpY{Zi)y3`*<jCpg1Wzul4ZP8CX=(fp*M1$sijb+EisC3-
+P)|5P^6|Oyl76W7G^A4Eg(MJsEAJ`qE<!|ij4FJ|YB^$gJJW;~q1`)N+jy8D<D9ypKNNJuhip%ie*;h1F8d2mO928D0~7!N00;m8
+03iUz!fjSi1ONd33jhEh00000000000001_0RR910AX`;Wpr~db98cPZfA2}a$#;{Z*5;~Wn^h#E_q>XY*0%90u%!j000080000X
+0Diy`UuFOR0CWHV02=@R00000000000Hgtq1ONbXVQyq^ZDnL>baP*9X<{#5UukY>bYEXCaCuNm0Rj{Q6aWAK2mk;8ApmTf0}SQ@
+004Oi0015U0000000000005)`Ed>Aoa$#;{Z*65{X>@a6Y-wUIb#!TLb6;&~cxi4faCuNm1qJ{B000930|4Uy002)200000
 """
 
 def __cubkit_bootstrap__():
@@ -119,9 +116,8 @@ del __cubkit_bootstrap__
 # scop: kernel min v1.4.5
 
 import html
-
-from typing import Any
-
+from pathlib import Path
+import yaml
 from telethon import events
 from telethon.errors import (
     ChannelInvalidError,
@@ -129,39 +125,50 @@ from telethon.errors import (
     FloodWaitError,
     RPCError,
 )
+import asyncio
 
 from core.lib.loader.module_base import ModuleBase, command
 from core.lib.loader.module_config import ConfigValue, EntityLike, Integer, ModuleConfig, Row
 
 # Local imports
-from randomedits_lib import STRINGS
 from randomedits_lib import _MixinUtils
 
-class RandomEdits(_MixinUtils, ModuleBase):
-    """Отправляет случайный эдит."""
+def _load_strings() -> dict[str, dict[str, str]]:
+    for root in (Path(__file__).resolve().parent, *(Path(path) for path in globals().get("__path__", ()))):
+        path = root / "assets" / "strings_random_media.yaml"
+        if path.is_file():
+            with path.open("r", encoding="utf-8") as file:
+                return yaml.safe_load(file)
+
+    raise FileNotFoundError("assets/strings_random_media.yaml")
+
+class RandomEdits(
+    _MixinUtils,
+    ModuleBase
+    ):
 
     name = "RandomEdits"
-    version = "1.0.4"
+    version = "1.0.5"
     author = "@modulesanhedonuya && porting by @Hairpin00"
     description = {
         "ru": "Отправляет случайный эдит",
         "en": "Sends a random edit",
     }
 
-    strings = STRINGS
+    strings: dict[str, dict[str, str]] = _load_strings()
 
     config = ModuleConfig(
         ConfigValue(
             "channel",
             "randomeditsforme",
-            description="Юзернейм, ID или ссылка на канал-источник эдитов(лучше не трогать)",
+            description=lambda mod: mod.strings('key_channel'),
             validator=EntityLike(),
         ),
         Row(),
         ConfigValue(
             "sample_limit",
             500,
-            description="Сколько последних сообщений канала просматривать при выборе",
+            description=lambda mod: mod.strings('key_sample_limit'),
             validator=Integer(min=1, max=500),
         ),
     )
@@ -189,6 +196,8 @@ class RandomEdits(_MixinUtils, ModuleBase):
                 return
 
             await self._edit_status(status, self.strings("done"))
+            await asyncio.sleep(3)
+            await status.delete()
         except (ChannelPrivateError, ChannelInvalidError, ValueError) as exc:
             self.log.warning("RandomEdits source channel is unavailable: %s", exc)
             await self._edit_status(status, self.strings("bad_channel"))
