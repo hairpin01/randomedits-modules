@@ -2,7 +2,8 @@
 
 STRINGS = {
     "ru": {
-        "name": "RandomEdits",
+        'key_sample_limit': 'Сколько последних сообщений канала просматривать при выборе',
+        'key_channel': 'Юзернейм, ID или ссылка на канал-источник эдитов (лучше не трогать)',
         "pick": '<tg-emoji emoji-id="5427312230767037491">🤔</tg-emoji> <b>Ищу погодь...</b>',
         "no_posts": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>Не удалось найти подходящие эдит.</b>',
         "done": '<tg-emoji emoji-id="5206607081334906820">✔️</tg-emoji> <b>Случайный эдит отправлен ниже.</b>',
@@ -24,7 +25,8 @@ STRINGS = {
         "unknown_error": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>Неожиданная ошибка:</b> <code>{error}</code>',
     },
     "en": {
-        "name": "RandomEdits",
+        'key_sample_limit': 'How many recent channel messages to view when selecting',
+        'key_channel': 'Username, ID or link to the source channel of the edits (better not to touch)',
         "pick": '<tg-emoji emoji-id="5427312230767037491">🤔</tg-emoji> <b>searching...</b>',
         "no_posts": '<tg-emoji emoji-id="5210952531676504517">❌</tg-emoji> <b>No suitable edit were found, sorry.</b>',
         "done": '<tg-emoji emoji-id="5206607081334906820">✔️</tg-emoji> <b>this edit ;).</b>',

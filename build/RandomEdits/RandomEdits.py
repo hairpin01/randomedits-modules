@@ -20,11 +20,14 @@ from core.lib.loader.module_config import ConfigValue, EntityLike, Integer, Modu
 from randomedits_lib import STRINGS
 from randomedits_lib import _MixinUtils
 
-class RandomEdits(_MixinUtils, ModuleBase):
+class RandomEdits(
+    _MixinUtils,
+    ModuleBase
+    ):
     """Отправляет случайный эдит."""
 
     name = "RandomEdits"
-    version = "1.0.4"
+    version = "1.0.5"
     author = "@modulesanhedonuya && porting by @Hairpin00"
     description = {
         "ru": "Отправляет случайный эдит",
@@ -37,14 +40,14 @@ class RandomEdits(_MixinUtils, ModuleBase):
         ConfigValue(
             "channel",
             "randomeditsforme",
-            description="Юзернейм, ID или ссылка на канал-источник эдитов(лучше не трогать)",
+            description=lambda mod: mod.strings('key_channel'),
             validator=EntityLike(),
         ),
         Row(),
         ConfigValue(
             "sample_limit",
             500,
-            description="Сколько последних сообщений канала просматривать при выборе",
+            description=lambda mod: mod.strings('key_sample_limit'),
             validator=Integer(min=1, max=500),
         ),
     )
